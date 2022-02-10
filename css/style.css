@@ -1,0 +1,129 @@
+* {
+    font-family: "Red Hat Display", sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: hsl(225, 100%, 94%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("../images/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+}
+.Box {
+    width: 400px;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 1px 1px 20px 0px hsl(224, 23%, 55%);
+}
+
+.Box > img,
+.Box > .caption {
+    width: 100%;
+}
+
+.Box > .caption {
+    padding: 30px;
+    text-align: center;
+}
+
+.Box > .caption h2,
+.left p {
+    color: hsl(223, 47%, 23%);
+}
+
+.Box > .caption > p {
+    margin: 10px 0;
+    font-size: 16px;
+}
+.Box > .caption > p,
+.left p span {
+    color: hsl(224, 23%, 55%);
+}
+
+.Plan {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 15px;
+    margin: 20px 0;
+}
+.Plan .left {
+    display: flex;
+}
+.left p {
+    font-weight: 900;
+    margin-left: 15px;
+}
+.left p span {
+    font-size: 15px;
+    display: block;
+    margin-top: 5px;
+}
+.Plan .right {
+    color: hsl(245, 75%, 52%);
+    font-weight: 900;
+}
+.Plan .right:hover {
+    text-decoration: none;
+}
+.caption button {
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    border: 0;
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    font-weight: 700;
+    margin: 0 0 20px 0;
+    cursor: pointer;
+}
+.caption button:hover {
+    opacity: 0.8;
+}
+.caption > a {
+    color: hsl(224, 23%, 55%);
+    text-decoration: none;
+    font-weight: 900;
+}
+.caption > a:hover {
+    color: hsl(223, 47%, 23%);
+}
+@media (max-width:767px) {
+    body{
+        background-image: url("../images/pattern-background-mobile.svg");
+        margin: 50px 0;
+    }    
+}
+/*
+# Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+## Typography
+
+### Body Copy
+
+- Font size (paragraph): 16px
+
+### Font
+
+- Family: [Red Hat Display](https://fonts.google.com/specimen/Red+Hat+Display)
+- Weights: 500, 700, 900
+
+*/
